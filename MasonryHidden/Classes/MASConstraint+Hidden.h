@@ -6,7 +6,7 @@
 //  Copyright © 2018年 renxin. All rights reserved.
 //
 
-#import "MASConstraint.h"
+#import <Masonry/MASConstraint.h>
 
 @interface MASConstraint (Hidden)
 
