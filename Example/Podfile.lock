@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - MasonryHidden (0.1.0):
+    - Masonry (= 1.1.0)
+
+DEPENDENCIES:
+  - MasonryHidden (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  MasonryHidden:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MasonryHidden: 86b6fe9e5833886331c752bf054a9795b87b5957
+
+PODFILE CHECKSUM: 36bbc9c100bac347362c65beea7d53b288f5e03a
+
+COCOAPODS: 1.5.3

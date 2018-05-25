@@ -61,12 +61,12 @@
 		673F34AE5472BA027679625B /* Pods-MasonryHidden_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryHidden_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryHidden_Tests/Pods-MasonryHidden_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		70C26F2C383E4247FE5A5BC5 /* Pods_MasonryHidden_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasonryHidden_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75244D0753D9EDB08075178C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		75244D0753D9EDB08075178C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		838A0A275CC89FFC369207F3 /* Pods_MasonryHidden_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasonryHidden_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D6037299C34FFD0D859340A /* Pods-MasonryHidden_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryHidden_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryHidden_Tests/Pods-MasonryHidden_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC059CD6FA742D10CE11131F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BCEC72CD14CFF93D71FE92FF /* MasonryHidden.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MasonryHidden.podspec; path = ../MasonryHidden.podspec; sourceTree = "<group>"; };
+		BC059CD6FA742D10CE11131F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BCEC72CD14CFF93D71FE92FF /* MasonryHidden.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MasonryHidden.podspec; path = ../MasonryHidden.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,10 +319,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MasonryHidden_Example/Pods-MasonryHidden_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/MasonryHidden/MasonryHidden.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MasonryHidden.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
