@@ -22,7 +22,7 @@ pod 'MasonryHidden'
 
 ## Author
 
-lifei321, fei.li@yingzt.com
+sunny, sunny.sun@yingzt.com
 
 ## License
 
