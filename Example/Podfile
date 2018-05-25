@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MasonryHidden_Example' do
+  pod 'MasonryHidden', :path => '../'
+
+  target 'MasonryHidden_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
