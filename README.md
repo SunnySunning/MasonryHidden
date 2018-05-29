@@ -1,6 +1,6 @@
 # MasonryHidden
 
-[![CI Status](https://img.shields.io/travis/lifei321/MasonryHidden.svg?style=flat)](https://travis-ci.org/lifei321/MasonryHidden)
+[![CI Status](https://img.shields.io/travis/sunny/MasonryHidden.svg?style=flat)](https://travis-ci.org/sunny/MasonryHidden)
 [![Version](https://img.shields.io/cocoapods/v/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 [![License](https://img.shields.io/cocoapods/l/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 [![Platform](https://img.shields.io/cocoapods/p/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
@@ -22,7 +22,7 @@ pod 'MasonryHidden'
 
 ## Author
 
-sunny, sunny.sun@yingzt.com
+sunny, 1475106659@qq.com
 
 ## License
 

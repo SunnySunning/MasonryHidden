@@ -25,7 +25,7 @@ THE SOFTWARE.
 
 ## MasonryHidden
 
-Copyright (c) 2018 lifei321 <fei.li@yingzt.com>
+Copyright (c) 2018 sunny <1475106659@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
