@@ -5,11 +5,40 @@
 [![License](https://img.shields.io/cocoapods/l/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 [![Platform](https://img.shields.io/cocoapods/p/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 
+## What's wrong with Masonry?
+**Masonry is so convenience. But when a view could hidden any where or any time,we maybe use updateContraint or use properties to link contraint,to active or deactive if necessary.its so troublesome！**
+
+**MasonryHidden is so convenience to solve above problems!!! focous on Example!!!**
+
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```obj-c
+//引用头文件
+#import "MASConstraint+Hidden.h"
+#import "UIView+MasonryHidden.h"
 
-## Requirements
+//创建view
+UIView *subView0 = [[UIView alloc] init];
+[self.view addSubview:subView0];
+[subView0 mas_makeConstraints:^(MASConstraintMaker *make) {
+make.left.equalTo(@20);
+make.right.equalTo(@(-20));
+//在需要hidden的约束下调用autoHidden()
+make.top.equalTo(@50).autoHidden(subView0);
+make.height.equalTo(@20).autoHidden(subView0);
+}];
+subView0.backgroundColor = [UIColor lightGrayColor];
+
+//在相关的方法中调用masonry_hidden
+_subView0.masonry_hidden = !_subView0.masonry_hidden;
+
+```
+
+## Star me
+
+if you feel convenience use masonryhidden,star me pleasure!
+
 
 ## Installation
 
