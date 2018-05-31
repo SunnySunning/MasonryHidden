@@ -22,11 +22,11 @@
 UIView *subView0 = [[UIView alloc] init];
 [self.view addSubview:subView0];
 [subView0 mas_makeConstraints:^(MASConstraintMaker *make) {
-make.left.equalTo(@20);
-make.right.equalTo(@(-20));
-//在需要hidden的约束下调用autoHidden()
-make.top.equalTo(@50).autoHidden(subView0);
-make.height.equalTo(@20).autoHidden(subView0);
+    make.left.equalTo(@20);
+    make.right.equalTo(@(-20));
+    //在需要hidden的约束下调用autoHidden()
+    make.top.equalTo(@50).autoHidden(subView0);
+    make.height.equalTo(@20).autoHidden(subView0);
 }];
 subView0.backgroundColor = [UIColor lightGrayColor];
 
