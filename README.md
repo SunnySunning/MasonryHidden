@@ -22,11 +22,11 @@
 UIView *subView0 = [[UIView alloc] init];
 [self.view addSubview:subView0];
 [subView0 mas_makeConstraints:^(MASConstraintMaker *make) {
-    make.left.equalTo(@20);
-    make.right.equalTo(@(-20));
-    //在需要hidden的约束下调用autoHidden()
-    make.top.equalTo(@50).autoHidden(subView0);
-    make.height.equalTo(@20).autoHidden(subView0);
+make.left.equalTo(@20);
+make.right.equalTo(@(-20));
+//在需要hidden的约束下调用autoHidden()
+make.top.equalTo(@50).autoHidden(subView0);
+make.height.equalTo(@20).autoHidden(subView0);
 }];
 subView0.backgroundColor = [UIColor lightGrayColor];
 
@@ -34,6 +34,9 @@ subView0.backgroundColor = [UIColor lightGrayColor];
 _subView0.masonry_hidden = !_subView0.masonry_hidden;
 
 ```
+## Gif
+
+![view demo](https://github.com/SunnySunning/MasonryHidden/blob/master/MaonryHidden.gif)
 
 ## Star me
 
