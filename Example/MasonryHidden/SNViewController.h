@@ -8,6 +8,13 @@
 
 @import UIKit;
 
-@interface SNViewController : UIViewController
+@interface SNViewController : UITableViewController
+
+@end
+
+@interface Item : NSObject
+
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, assign) Class pushVCClass;
 
 @end

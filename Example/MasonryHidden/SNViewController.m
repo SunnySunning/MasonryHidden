@@ -7,12 +7,12 @@
 //
 
 #import "SNViewController.h"
-#import <Masonry/Masonry.h>
-#import "MASConstraint+Hidden.h"
-#import "UIView+MasonryHidden.h"
+#import "SNMasonryHiddenViewController.h"
+#import "SNMaonryUpdateContriantViewController.h"
+#import "SNMasonryContraintActiveViewController.h"
 
 @interface SNViewController () {
-    UIView *_subView0;
+    NSArray <Item *>*itemArray;
 }
 @end
 
@@ -22,37 +22,49 @@
 {
     [super viewDidLoad];
     
-    UIView *subView0 = [[UIView alloc] init];
-    [self.view addSubview:subView0];
-    [subView0 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(@20);
-        make.right.equalTo(@(-20));
-        make.top.equalTo(@50).autoHidden(subView0);
-        make.height.equalTo(@20).autoHidden(subView0);
-    }];
-    subView0.backgroundColor = [UIColor lightGrayColor];
-    _subView0 = subView0;
+    Item *item0 = [[Item alloc] init];
+    item0.title = @"MasonryHidden";
+    item0.pushVCClass = [SNMasonryHiddenViewController class];
+    
+    Item *item1 = [[Item alloc] init];
+    item1.title = @"MaonryUpdateContriant";
+    item1.pushVCClass = [SNMaonryUpdateContriantViewController class];
+
+    Item *item2 = [[Item alloc] init];
+    item2.title = @"MasonryContraintActive";
+    item2.pushVCClass = [SNMasonryContraintActiveViewController class];
+
+    itemArray = @[item0, item1, item2];
     
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    _subView0.masonry_hidden = !_subView0.masonry_hidden;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return itemArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+    }
+    Item *item = [itemArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = item.title;
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Item *item = [itemArray objectAtIndex:indexPath.row];
+    UIViewController *vc = [[item.pushVCClass alloc] init];
+    vc.title = item.title;
+    [self.navigationController pushViewController:vc animated:true] ;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+@end
 
-
-
-
-
-
-
-
-
-
+@implementation Item
 @end
