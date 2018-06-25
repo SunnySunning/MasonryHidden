@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.6.0](https://github.com/SunnySunning/MasonryHidden/tree/0.6.0) (2018-06-25)
+[Full Changelog](https://github.com/SunnySunning/MasonryHidden/compare/0.5.0...0.6.0)
+
 ## [0.5.0](https://github.com/SunnySunning/MasonryHidden/tree/0.5.0) (2018-05-31)
 
 
