@@ -13,3 +13,8 @@ script:
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MasonryHidden.xcworkspace -scheme MasonryHidden-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
 - echo 'hello travis ci'
+
+#指定分支，只有指定的分支提交时才会运行脚本
+branches:
+  only:
+    - master
