@@ -1,24 +1,25 @@
 {
   "name": "MasonryHidden",
-  "version": "0.1.0",
-  "summary": "A short description of MasonryHidden.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lifei321/MasonryHidden",
+  "version": "0.8.0",
+  "summary": "MasonryHidden.",
+  "description": "A short description of MasonryHidden.",
+  "homepage": "https://github.com/SunnySunning/MasonryHidden.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "lifei321": "fei.li@yingzt.com"
+    "sunny": "1475106659@qq.com"
   },
   "source": {
-    "git": "https://github.com/lifei321/MasonryHidden.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/SunnySunning/MasonryHidden.git",
+    "tag": "0.8.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "MasonryHidden/Classes/**/*",
+  "frameworks": "Foundation",
   "dependencies": {
     "Masonry": [
       "1.1.0"
