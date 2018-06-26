@@ -11,7 +11,7 @@ before_install:
 - pod install --project-directory=Example
 - gem install github_changelog_generator
 script:
-- github_changelog_generator
+- github_changelog_generator --token 02c9a46f2511440882fb42037b5e864d508666ab
 - git status
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MasonryHidden.xcworkspace -scheme MasonryHidden-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
