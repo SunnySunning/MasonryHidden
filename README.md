@@ -1,6 +1,6 @@
 # MasonryHidden
 
-[![CI Status](https://img.shields.io/travis/sunny/MasonryHidden.svg?style=flat)](https://travis-ci.org/sunny/MasonryHidden)
+[![Build Status](https://travis-ci.org/SunnySunning/MasonryHidden.svg?branch=master)](https://travis-ci.org/SunnySunning/MasonryHidden)
 [![Version](https://img.shields.io/cocoapods/v/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 [![License](https://img.shields.io/cocoapods/l/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
 [![Platform](https://img.shields.io/cocoapods/p/MasonryHidden.svg?style=flat)](https://cocoapods.org/pods/MasonryHidden)
