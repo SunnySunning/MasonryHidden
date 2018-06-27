@@ -13,7 +13,7 @@ before_install:
 script:
 - github_changelog_generator --version
 # - export CHANGELOG_GITHUB_TOKEN="62e3e57ab4ae4dc8e42fcaa23eb9be7675ce73cd"
-- github_changelog_generator --token 893f4ef7a78e39743acce29bd517e65243ac18e5
+- github_changelog_generator -u SunnySunning -p MasonryHidden
 - git status
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MasonryHidden.xcworkspace -scheme MasonryHidden-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
