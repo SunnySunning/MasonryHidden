@@ -12,7 +12,7 @@ before_install:
 - gem install github_changelog_generator
 script:
 # - export CHANGELOG_GITHUB_TOKEN="62e3e57ab4ae4dc8e42fcaa23eb9be7675ce73cd"
-- github_changelog_generator --token 62e3e57ab4ae4dc8e42fcaa23eb9be7675ce73cd
+- github_changelog_generator --token ba714ab76b27d584f807de7faf4a814f369fd6e1
 - git status
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/MasonryHidden.xcworkspace -scheme MasonryHidden-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
@@ -24,3 +24,5 @@ script:
 #     - master
 # https://api.github.com/repos/SunnySunning/MasonryHidden/tags?per_page=100:
 #                       /repos/:owner      /:repo/git/tags/:tag_sha
+
+# curl -u SunnySunning:ba714ab76b27d584f807de7faf4a814f369fd6e1 https://api.github.com/user
