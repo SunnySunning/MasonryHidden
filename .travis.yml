@@ -11,6 +11,7 @@ before_install:
 - pod install --project-directory=Example
 - gem install github_changelog_generator
 script:
+- github_changelog_generator --version
 # - export CHANGELOG_GITHUB_TOKEN="62e3e57ab4ae4dc8e42fcaa23eb9be7675ce73cd"
 - github_changelog_generator --token ba714ab76b27d584f807de7faf4a814f369fd6e1
 - git status
