@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MasonryHidden'
-  s.version          = '0.9.0'
+  s.version          = '0.9.1'
   s.summary          = 'MasonryHidden.'
 
 # This description is used to generate tags and improve search results.
@@ -36,5 +36,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'Foundation'
-   s.dependency 'Masonry', '1.1.0'
+   s.dependency 'Masonry'
 end

@@ -1,9 +1,9 @@
 //
 //  UIView+MasonryHidden.m
-//  cardloan
+//  
 //
 //  Created by sunny on 2018/5/23.
-//  Copyright © 2018年 renxin. All rights reserved.
+//  Copyright © 2018年  All rights reserved.
 //
 
 #import "UIView+MasonryHidden.h"
@@ -12,6 +12,7 @@
 static char *NSLayoutConstraintOriginConstant = "NSLayoutConstraintOriginConstant";
 static char *UIViewCanHiddenConstraintsSet = "UIViewCanHiddenConstraintsSet";
 static char *MasonryHidden = "MasonryHidden";
+static char *MasonryHiddenCallback = "MasonryHiddenCallback";
 
 @implementation NSLayoutConstraint (OriginConstant)
 
@@ -73,6 +74,18 @@ static char *MasonryHidden = "MasonryHidden";
     }
     
     objc_setAssociatedObject(self, MasonryHidden, @(masonry_hidden), OBJC_ASSOCIATION_ASSIGN);
+    
+    if (self.masonryHiddenCallback) {
+        self.masonryHiddenCallback(masonry_hidden);
+    }
+}
+
+- (UIViewMasonryHiddenCallback)masonryHiddenCallback {
+    return objc_getAssociatedObject(self, MasonryHiddenCallback);
+}
+
+- (void)setMasonryHiddenCallback:(UIViewMasonryHiddenCallback)masonryHiddenCallback {
+    objc_setAssociatedObject(self, MasonryHiddenCallback, masonryHiddenCallback, OBJC_ASSOCIATION_COPY);
 }
 
 - (void)addWillHiddenConstraint:(NSArray<MASConstraint *> *)willHiddenConstraintArray {

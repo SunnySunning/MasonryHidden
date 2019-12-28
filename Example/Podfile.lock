@@ -1,6 +1,6 @@
 PODS:
   - Masonry (1.1.0)
-  - MasonryHidden (0.8.0):
+  - MasonryHidden (0.9.0):
     - Masonry (= 1.1.0)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MasonryHidden: 1f481ca840c9c85f4b016446a4d6498d8719c2b4
+  MasonryHidden: 523bd2725be08ca5d1c1164d1b8a03b9d9611135
 
 PODFILE CHECKSUM: 36bbc9c100bac347362c65beea7d53b288f5e03a
 

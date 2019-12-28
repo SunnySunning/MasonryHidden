@@ -1,6 +1,6 @@
 {
   "name": "MasonryHidden",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "summary": "MasonryHidden.",
   "description": "A short description of MasonryHidden.",
   "homepage": "https://github.com/SunnySunning/MasonryHidden.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/SunnySunning/MasonryHidden.git",
-    "tag": "0.8.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "8.0"

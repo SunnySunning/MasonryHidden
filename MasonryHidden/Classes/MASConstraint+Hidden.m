@@ -1,9 +1,9 @@
 //
 //  MASConstraint+Hidden.m
-//  cardloan
+//
 //
 //  Created by sunny on 2018/5/25.
-//  Copyright © 2018年 renxin. All rights reserved.
+//  Copyright © 2018年 All rights reserved.
 //
 
 #import "MASConstraint+Hidden.h"
